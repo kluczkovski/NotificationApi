@@ -1,4 +1,4 @@
-Design Patterns com C#, .NET 6 e ASP.NET Core 6
+Design Patterns with C#, .NET 6 e ASP.NET Core 6
 
 
 Design Patterns used:
