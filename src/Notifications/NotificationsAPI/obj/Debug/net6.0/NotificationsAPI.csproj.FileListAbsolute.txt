@@ -6,6 +6,10 @@
 /Users/evertonkluczkovski/Git/NotificationApi/src/Notifications/NotificationsAPI/bin/Debug/net6.0/NotificationsAPI.dll
 /Users/evertonkluczkovski/Git/NotificationApi/src/Notifications/NotificationsAPI/bin/Debug/net6.0/NotificationsAPI.pdb
 /Users/evertonkluczkovski/Git/NotificationApi/src/Notifications/NotificationsAPI/bin/Debug/net6.0/Microsoft.OpenApi.dll
+/Users/evertonkluczkovski/Git/NotificationApi/src/Notifications/NotificationsAPI/bin/Debug/net6.0/Newtonsoft.Json.dll
+/Users/evertonkluczkovski/Git/NotificationApi/src/Notifications/NotificationsAPI/bin/Debug/net6.0/SendGrid.dll
+/Users/evertonkluczkovski/Git/NotificationApi/src/Notifications/NotificationsAPI/bin/Debug/net6.0/SendGrid.Extensions.DependencyInjection.dll
+/Users/evertonkluczkovski/Git/NotificationApi/src/Notifications/NotificationsAPI/bin/Debug/net6.0/StarkbankEcdsa.dll
 /Users/evertonkluczkovski/Git/NotificationApi/src/Notifications/NotificationsAPI/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
 /Users/evertonkluczkovski/Git/NotificationApi/src/Notifications/NotificationsAPI/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/evertonkluczkovski/Git/NotificationApi/src/Notifications/NotificationsAPI/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
