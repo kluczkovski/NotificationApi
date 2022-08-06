@@ -30,3 +30,6 @@
 /Users/evertonkluczkovski/Git/NotificationApi/src/Notifications/NotificationsAPI/obj/Debug/net6.0/NotificationsAPI.genruntimeconfig.cache
 /Users/evertonkluczkovski/Git/NotificationApi/src/Notifications/NotificationsAPI/obj/Debug/net6.0/ref/NotificationsAPI.dll
 /Users/evertonkluczkovski/Git/NotificationApi/src/Notifications/NotificationsAPI/bin/Debug/net6.0/Serilog.dll
+/Users/evertonkluczkovski/Git/NotificationApi/src/Notifications/NotificationsAPI/bin/Debug/net6.0/Serilog.Extensions.Hosting.dll
+/Users/evertonkluczkovski/Git/NotificationApi/src/Notifications/NotificationsAPI/bin/Debug/net6.0/Serilog.Extensions.Logging.dll
+/Users/evertonkluczkovski/Git/NotificationApi/src/Notifications/NotificationsAPI/bin/Debug/net6.0/Serilog.Sinks.Console.dll
