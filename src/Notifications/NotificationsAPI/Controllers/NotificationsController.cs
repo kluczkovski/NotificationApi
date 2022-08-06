@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using NotificationsAPI.Infrastructure.Services;
 using NotificationsAPI.Models;
-using SendGrid;
-using SendGrid.Helpers.Mail;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -16,18 +10,20 @@ namespace NotificationsAPI.Controllers
     [Route("api/notifications")]
     public class NotificationsController : ControllerBase
     {
-        private readonly IEmailService _emailService;
+        private readonly INotificationFactoryService _notificationFactoryService;
 
-        public NotificationsController(IEmailService emailService)
+        public NotificationsController(INotificationFactoryService notification)
         {
-            _emailService = emailService;
+            _notificationFactoryService = notification;
         }
 
         [HttpPost]
-        public async Task<IActionResult> Notify(NotificatonInputModel notification)
+        public async Task<IActionResult> Notify(NotificatonInputModel model)
         {
-            await _emailService.SendAsync(notification.Destination, notification.Content);
+            var notification =  _notificationFactoryService.GetFacade(model.Type);
 
+            await notification.SendAsync(model.Destination, model.Content);
+          
             return Accepted();
         }
     }

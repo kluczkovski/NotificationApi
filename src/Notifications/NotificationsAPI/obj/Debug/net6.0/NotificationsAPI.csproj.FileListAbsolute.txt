@@ -29,3 +29,4 @@
 /Users/evertonkluczkovski/Git/NotificationApi/src/Notifications/NotificationsAPI/obj/Debug/net6.0/NotificationsAPI.pdb
 /Users/evertonkluczkovski/Git/NotificationApi/src/Notifications/NotificationsAPI/obj/Debug/net6.0/NotificationsAPI.genruntimeconfig.cache
 /Users/evertonkluczkovski/Git/NotificationApi/src/Notifications/NotificationsAPI/obj/Debug/net6.0/ref/NotificationsAPI.dll
+/Users/evertonkluczkovski/Git/NotificationApi/src/Notifications/NotificationsAPI/bin/Debug/net6.0/Serilog.dll
