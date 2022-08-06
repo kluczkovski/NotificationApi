@@ -1,5 +1,4 @@
-﻿using System;
-namespace NotificationsAPI.Models
+﻿namespace NotificationsAPI.Models
 {
     public enum NotificationType
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 namespace NotificationsAPI.Infrastructure.Services
 {
-    public interface IEmailService
+    public interface INotification
     {
         Task SendAsync(string destination, string content);
     }

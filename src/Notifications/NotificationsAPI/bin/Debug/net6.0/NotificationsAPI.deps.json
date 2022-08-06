@@ -10,6 +10,7 @@
         "dependencies": {
           "SendGrid": "9.28.0",
           "SendGrid.Extensions.DependencyInjection": "1.0.1",
+          "Serilog": "2.11.0",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
         "runtime": {
@@ -98,6 +99,14 @@
           "lib/netstandard2.0/SendGrid.Extensions.DependencyInjection.dll": {
             "assemblyVersion": "1.0.1.0",
             "fileVersion": "1.0.1.0"
+          }
+        }
+      },
+      "Serilog/2.11.0": {
+        "runtime": {
+          "lib/net5.0/Serilog.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.11.0.0"
           }
         }
       },
@@ -254,6 +263,13 @@
       "sha512": "sha512-M3dHAkRIIDWvGNro5S25xjQ+nvUTomZ5er12TL0Re+G2UwIntMvO2OthECb3SV28AvOtDd4yZERjdHTrJ+gD1w==",
       "path": "sendgrid.extensions.dependencyinjection/1.0.1",
       "hashPath": "sendgrid.extensions.dependencyinjection.1.0.1.nupkg.sha512"
+    },
+    "Serilog/2.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ysv+hBzTul6Dp+Hvm10FlhJO3yMQcFKSAleus+LpiIzvNstpeV4Z7gGuIZ1OPNfIMulSHOjmLuGAEDKzpnV8ZQ==",
+      "path": "serilog/2.11.0",
+      "hashPath": "serilog.2.11.0.nupkg.sha512"
     },
     "starkbank-ecdsa/1.3.3": {
       "type": "package",

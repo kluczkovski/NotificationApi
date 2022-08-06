@@ -1,5 +1,4 @@
 ﻿using NotificationsAPI.Infrastructure.Services;
-using SendGrid;
 using SendGrid.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 var sendGridApiKey = builder.Configuration.GetSection("SENDGRID_API_KEY").Value;
 
-builder.Services.AddScoped<IEmailService, EmailService>();
+builder.Services.AddScoped<INotificationFactoryService, NotificationFactoryService>();
 
 builder.Services.AddSendGrid(options => {
     options.ApiKey = sendGridApiKey;

@@ -4,7 +4,7 @@ using SendGrid.Helpers.Mail;
 
 namespace NotificationsAPI.Infrastructure.Services
 {
-    public class EmailService : IEmailService
+    public class EmailService : INotification
     {
         private readonly ISendGridClient _sendGridClient;
 
