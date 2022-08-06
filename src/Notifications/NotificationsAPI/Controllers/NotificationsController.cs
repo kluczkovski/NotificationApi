@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using NotificationsAPI.CORS;
 using NotificationsAPI.Infrastructure.Services;
+using NotificationsAPI.Mediator;
 using NotificationsAPI.Models;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -10,20 +12,18 @@ namespace NotificationsAPI.Controllers
     [Route("api/notifications")]
     public class NotificationsController : ControllerBase
     {
-        private readonly INotificationFactoryService _notificationFactoryService;
+        private readonly IMediator _mediator;
 
-        public NotificationsController(INotificationFactoryService notification)
+        public NotificationsController(IMediator mediator)
         {
-            _notificationFactoryService = notification;
+            _mediator = mediator;
         }
 
         [HttpPost]
-        public async Task<IActionResult> Notify(NotificatonInputModel model)
+        public async Task<IActionResult> Notify(NotifyUserCommand command)
         {
-            var notification =  _notificationFactoryService.GetFacade(model.Type);
-
-            await notification.SendAsync(model.Destination, model.Content);
-          
+            await _mediator.Send(command);
+ 
             return Accepted();
         }
     }

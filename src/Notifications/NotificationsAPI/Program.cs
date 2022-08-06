@@ -1,4 +1,7 @@
-﻿using NotificationsAPI.Infrastructure.Services;
+﻿using NotificationsAPI.CORS;
+using NotificationsAPI.CORS.NotifyUser;
+using NotificationsAPI.Infrastructure.Services;
+using NotificationsAPI.Mediator;
 using SendGrid.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,6 +10,10 @@ var builder = WebApplication.CreateBuilder(args);
 var sendGridApiKey = builder.Configuration.GetSection("SENDGRID_API_KEY").Value;
 
 builder.Services.AddScoped<INotificationFactoryService, NotificationFactoryService>();
+
+builder.Services.AddScoped<ICommandHandler<NotifyUserCommand, Task>, NotifyUserCommandHandler>();
+
+builder.Services.AddScoped<IMediator, Mediator>();
 
 builder.Services.AddSendGrid(options => {
     options.ApiKey = sendGridApiKey;

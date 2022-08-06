@@ -21,11 +21,17 @@
     <None Remove="Infrastructure\" />
     <None Remove="Infrastructure\Services\" />
     <None Remove="Serilog" />
+    <None Remove="CORS\" />
+    <None Remove="CORS\NotifyUser\" />
+    <None Remove="Mediator\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="Infrastructure\" />
     <Folder Include="Infrastructure\Services\" />
+    <Folder Include="CORS\" />
+    <Folder Include="CORS\NotifyUser\" />
+    <Folder Include="Mediator\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\.editorconfig" />
